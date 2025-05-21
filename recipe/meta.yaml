@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=3.0.0
+    - apache-airflow >=3.0.1
 
 test:
   imports:
