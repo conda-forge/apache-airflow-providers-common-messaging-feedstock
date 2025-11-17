@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-common-messaging" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_common_messaging-{{ version }}.tar.gz
-  sha256: 2eeca536a267f8bff5b5ecba2e53a71ef4224bc22b03150a2cdb2c1dec7cc1f1
+  sha256: a203a38485753ad4c013dab401a390b85ec41081f48c6e73c1318a471d6d2884
 
 build:
   noarch: python
