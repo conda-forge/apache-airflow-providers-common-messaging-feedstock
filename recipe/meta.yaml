@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-common-messaging" %}
 {% set version = "2.0.1" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +36,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-common-messaging for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/common/messaging/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-common-messaging/stable/index.html
   dev_url: https://github.com/apache/airflow/
