@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-common-messaging
-  version: "2.0.2"
+  version: "2.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_common_messaging-${{ version }}.tar.gz
-  sha256: 93a704650dab0d270e640d44415c66c2971a4efe776ce5ae9ad27f9b2ab577a1
+  sha256: 5094c0485ad28d3f969bbe596e4146c6f07dc67cf549f979fcd516fa2492193c
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
 tests:
   - python:
       imports:
-      - airflow.providers.common.messaging
+        - airflow.providers.common.messaging
       pip_check: true
       python_version: ${{ python_min }}.*
 
