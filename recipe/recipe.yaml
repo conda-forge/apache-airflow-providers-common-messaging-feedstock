@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-common-messaging
-  version: "2.0.4"
+  version: "2.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_common_messaging-${{ version }}.tar.gz
-  sha256: f6d942b8e292ab45fd1417861cc7061e0c2945ab9df537985d35ff09c7b0d117
+  sha256: 06836bec9679e2f5f483fe17a8ce9714bfb0935f88690e41264d88ca6c751758
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==3.12.0
+    - flit-core ==4.0.2
   run:
     - python >=${{ python_min }}
     - apache-airflow >=3.0.1
