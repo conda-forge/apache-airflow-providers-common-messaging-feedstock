@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-common-messaging
-  version: "2.1.0"
+  version: "2.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_common_messaging-${{ version }}.tar.gz
-  sha256: 06836bec9679e2f5f483fe17a8ce9714bfb0935f88690e41264d88ca6c751758
+  sha256: 57224acd9ed9b25b3f124a040646a56e4b816a1be5179476cd21ee438d6a75df
 
 build:
   noarch: python
